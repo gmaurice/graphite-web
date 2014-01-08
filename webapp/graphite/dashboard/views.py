@@ -229,6 +229,7 @@ def find(request):
 
     if found:
       results.append( dict(name=dashboard.name) )
+      results.sort()
 
   return json_response( dict(dashboards=results) )
 
